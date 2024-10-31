@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Classic White T-Shirt",
+      "imageSrc": "https://images.asos-media.com/products/weekday-slim-fit-t-shirt-in-white/205697645-3?$n_320w$&wid=317&fit=constrain",
+      "description": "A versatile, comfortable white t-shirt made from 100% cotton. Perfect for layering or wearing on its own.",
+      "price": 15.99
+    },
+    
+    {
+      "id": 2,
+      "name": "Blue Denim Jeans",
+      "imageSrc": "https://images.asos-media.com/products/stradivarius-wide-leg-dad-jean-in-dark-vintage-wash/205287528-1-lightblue?$n_1280w$&wid=1125&fit=constrain",
+      "description": "Stylish slim-fit denim jeans with a classic blue wash. Durable and perfect for everyday wear.",
+      "price": 45.99
+    },
+    {
+      "id": 3,
+      "name": "Hooded Sweatshirt",
+      "imageSrc": "https://images.asos-media.com/products/carhartt-wip-casey-zip-up-hooded-sweatshirt-in-khaki/206624362-1-khaki?$n_320w$&wid=317&fit=constrain",
+      "description": "Soft, comfortable hoodie available in multiple colors. Great for a casual, laid-back style.",
+      "price": 35.99
+    },
+    {
+      "id": 4,
+      "name": "Leather Jacket",
+      "imageSrc": "https://images.asos-media.com/products/cotton-on-leo-faux-leather-jacket-in-washed-brown/207087220-4?$n_320w$&wid=317&fit=constrain",
+      "description": "Classic black leather jacket with a fitted design and zip-up closure. Adds an edge to any outfit.",
+      "price": 89.99
+    },
+    {
+      "id": 5,
+      "name": "Flannel Shirt",
+      "imageSrc": "https://images.asos-media.com/products/asos-design-flannel-oxford-shirt-in-black-cream-check/207154865-1-blackcream?$n_320w$&wid=317&fit=constrain",
+      "description": "Cozy, plaid flannel shirt with button-up front. Perfect for layering during cooler seasons.",
+      "price": 29.99
+    },
+    {
+      "id": 6,
+      "name": "Chino Pants",
+      "imageSrc": "https://images.asos-media.com/products/dickies-874-straight-fit-work-chino-trousers-in-white/204455841-1-white?$n_320w$&wid=317&fit=constrain",
+      "description": "Classic-fit chino pants with a soft, comfortable fabric. Great for both casual and formal occasions.",
+      "price": 39.99
+    },
+    {
+      "id": 7,
+      "name": "Casual Sneakers",
+      "imageSrc": "https://images.asos-media.com/products/vans-old-skool-trainers-in-deep-blue-and-white/206120765-1-pigsuededarkestspruc?$n_320w$&wid=317&fit=constrain",
+      "description": "Comfortable and stylish sneakers suitable for everyday wear, featuring a minimalist design.",
+      "price": 49.99
+    },
+    {
+      "id": 8,
+      "name": "Cotton Polo Shirt",
+      "imageSrc": "https://images.asos-media.com/products/cotton-on-oversized-long-sleeve-polo-fleece-in-stripe/206815528-2?$n_320w$&wid=317&fit=constrain",
+      "description": "Breathable cotton polo shirt available in various colors. A timeless choice for smart-casual outfits.",
+      "price": 24.99
+    },
+    {
+      "id": 9,
+      "name": "Summer Dress",
+      "imageSrc": "https://images.asos-media.com/products/hollister-side-smocked-floral-print-maxi-dress-with-side-split-in-green/206686012-2?$n_320w$&wid=317&fit=constrain",
+      "description": "Lightweight, floral summer dress that is perfect for warm weather. Elegant and comfortable.",
+      "price": 39.99
+    },
+    {
+      "id": 10,
+      "name": "Wool Scarf",
+      "imageSrc": "https://images.asos-media.com/products/asos-design-wool-mix-scarf-in-black-tassel-design/206892823-2?$n_320w$&wid=317&fit=constrain",
+      "description": "Warm and cozy wool scarf, perfect for winter. Available in various colors.",
+      "price": 19.99
+    }
+  ]
+  

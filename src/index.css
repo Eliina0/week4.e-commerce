@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+  --light-bg: #ffffff;
+  --light-text: #333333;
+
+  --dark-bg: #333333;
+  --dark-text: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Marcellus', serif;
+}
+
+html[data-theme='light'] {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+html[data-theme='dark'] {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}

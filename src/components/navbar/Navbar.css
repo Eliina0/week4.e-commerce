@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.layout_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-family: 'Marcellus', serif;
+}
+
+.nav_project_name {
+    font-size: 1.8em; 
+    font-weight: bold;
+    color: inherit;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav_link.active {
+    font-weight: bold;
+}
+
+.nav_link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.theme_switch_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme_icon {
+    font-size: 1.6em; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.theme_switch_button:hover .theme_icon {
+    transform: scale(1.2); 
+}
+
+.sun_icon {
+    color: #FFC107; 
+}
+
+.moon_icon {
+    color: #00BFFF; 
+}
+
+.theme_switch_button:hover .sun_icon {
+    color: #FFB300; 
+}
+
+.theme_switch_button:hover .moon_icon {
+    color: #1E90FF; 
+}
+
+body[data-theme='light'] .nav_link {
+    color: #333; 
+}
+
+body[data-theme='light'] .nav_link.active {
+    color: #000; 
+}
+
+body[data-theme='dark'] .layout_nav {
+    background-color: #444; 
+    border-color: #555; 
+}
+
+body[data-theme='dark'] .nav_link {
+    color: #ffffff; 
+}
+
+body[data-theme='dark'] .nav_link.active {
+    color: #FFD700; 
+}
+
+body[data-theme='dark'] .nav_link:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+.cart_button {
+    display: flex;
+}
+.cart_button svg {
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
