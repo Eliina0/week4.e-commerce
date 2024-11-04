@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import products from '../productList.json';
 
 export const ProductContext = createContext();
@@ -6,9 +6,10 @@ export const ProductContext = createContext();
 export const ProductManagementProvider = ({ children }) => {
     const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []);
 
-    useEffect(() => {
-        localStorage.setItem('cart', JSON.stringify(cart));
-    }, [cart]);
+    const updateCartAndLocalStorage = (updatedCart) => {
+        setCart(updatedCart);
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+    };
 
     const addItem = (id) => {
         const existingItemIndex = cart.findIndex(item => item.id === id);
@@ -21,7 +22,7 @@ export const ProductManagementProvider = ({ children }) => {
             updatedCart = [...cart, { id, quantity: 1 }];
         }
         
-        setCart(updatedCart);
+        updateCartAndLocalStorage(updatedCart);
     };
 
     const removeItem = (id) => {
@@ -35,11 +36,8 @@ export const ProductManagementProvider = ({ children }) => {
             } else {
                 updatedCart.splice(existingItemIndex, 1); 
             }
-        } else {
-            updatedCart = cart;
+            updateCartAndLocalStorage(updatedCart);
         }
-        
-        setCart(updatedCart);
     };
 
     const getTotalItems = () => {
@@ -74,7 +72,8 @@ export const ProductManagementProvider = ({ children }) => {
             return accumulator + (product.price * product.quantity);
         }, 0);
         return totalPrice.toFixed(2);     
-    }
+    };
+
 
     const values = {
         products,
@@ -86,7 +85,7 @@ export const ProductManagementProvider = ({ children }) => {
         getOneProduct,
         getProductsInCart,
         getQuantity,
-        getTotalPrice
+        getTotalPrice,
     };
 
     return (
